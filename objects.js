@@ -58,4 +58,87 @@ function keyDeleter(obj) {
   return obj;
 }
 
-console.log(keyDeleter(sampleObj));
+// console.log(keyDeleter(sampleObj));
+
+function makeStudentsReport(data) {
+  return data.map(obj => `${obj.name}: ${obj.grade}`);
+}
+
+const testData = [
+  { name: 'Jane Doe', grade: 'A' },
+  { name: 'John Dough', grade: 'B' },
+  { name: 'Jill Do', grade: 'A' },
+];
+
+// console.log(makeStudentsReport(testData));
+
+const studentData = [
+  {
+    name: 'Tim',
+    status: 'Current student',
+    course: 'Biology',
+  },
+  {
+    name: 'Sue',
+    status: 'Withdrawn',
+    course: 'Mathematics',
+  },
+  {
+    name: 'Liz',
+    status: 'On leave',
+    course: 'Computer science',
+  },
+];
+
+function enrollInSummerSchool(students) {
+  return students.map(obj => {
+    obj.status = 'In Summer school';
+    return obj;
+  });
+}
+
+// console.log(enrollInSummerSchool(studentData));
+
+const scratchData = [
+  { id: 22, foo: 'bar' },
+  { id: 28, foo: 'bizz' },
+  { id: 19, foo: 'bazz' },
+];
+
+function findById(items, idNum) {
+  return items.find(obj => obj.id === idNum);
+}
+
+// console.log(findById(scratchData, 22));
+
+// running the function with `objectA` and `expectedKeys`
+// should return `true`
+const objectA = {
+  id: 2,
+  name: 'Jane Doe',
+  age: 34,
+  city: 'Chicago',
+};
+
+// running the function with `objectB` and `expectedKeys`
+// should return `false`
+const objectB = {
+  id: 3,
+  age: 33,
+  city: 'Peoria',
+};
+
+const expectedKeys = ['id', 'name', 'age', 'city'];
+
+function validateKeys(object, expectedKeys) {
+  let matchedKeys = true;
+  for (let i = 0; i < expectedKeys.length; i++) {
+    if (!object.hasOwnProperty(expectedKeys[i])) {
+      return false;
+    }
+  }
+  return matchedKeys;
+}
+
+// console.log(validateKeys(objectA, expectedKeys));
+// console.log(validateKeys(objectB, expectedKeys));
