@@ -172,3 +172,22 @@ const myObject = {
 };
 
 // console.log(myObject.meals[3]);
+
+const myArray = [
+  {
+    name: 'Scott Dowding',
+    jobTitle: 'Web Developer',
+  },
+  {
+    name: 'James Dowding',
+    jobTitle: 'Plumber',
+  },
+  {
+    name: 'David Dowding',
+    jobTitle: 'QA Engineer',
+  }
+];
+
+// myArray.forEach(obj => {
+//   console.log(`Name: ${obj.name} Job Title: ${obj.jobTitle}`);
+// });
