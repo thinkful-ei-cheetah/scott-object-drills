@@ -154,3 +154,15 @@ const loaf = {
 // console.log(loaf.flour);
 // console.log(loaf.water);
 // console.log(loaf.hydration());
+
+const newObject = {
+  foo: 'Scott',
+  bar: 'David',
+  fum: 'Dowding',
+  quux: 'James',
+  spam: 'Joseph',
+};
+
+// for (const key in newObject) {
+//   console.log(`${key}: ${newObject[key]}`);
+// }
