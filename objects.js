@@ -181,13 +181,24 @@ const myArray = [
   {
     name: 'James Dowding',
     jobTitle: 'Plumber',
+    boss: 'Mike Delicio',
   },
   {
     name: 'David Dowding',
     jobTitle: 'QA Engineer',
+    boss: 'Dave Wyman',
   }
 ];
 
 // myArray.forEach(obj => {
 //   console.log(`Name: ${obj.name} Job Title: ${obj.jobTitle}`);
 // });
+
+// myArray.forEach(obj => {
+//   if (obj.hasOwnProperty('boss')) {
+//     console.log(`${obj.jobTitle} ${obj.name} reports to ${obj.boss}.`);
+//   } else {
+//     console.log(`${obj.jobTitle} ${obj.name} doesn't report to anybody.`);
+//   }
+// });
+
