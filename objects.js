@@ -202,3 +202,26 @@ const myArray = [
 //   }
 // });
 
+function decode(word) {
+  const decChars = {
+    a: 2,
+    b: 3,
+    c: 4,
+    d: 5,
+  };
+
+  if (decChars.hasOwnProperty(word[0])) {
+    return word[decChars[word[0]] - 1];
+  } else {
+    return ' ';
+  }
+}
+
+function decodeWords(words) {
+  const wordsArr = words.split(' ');
+  const decArr = wordsArr.map(word => decode(word));
+  return decArr.join('');
+}
+
+console.log(decodeWords('craft block argon meter bells brown croon droop'));
+
