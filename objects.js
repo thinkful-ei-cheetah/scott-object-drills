@@ -166,3 +166,9 @@ const newObject = {
 // for (const key in newObject) {
 //   console.log(`${key}: ${newObject[key]}`);
 // }
+
+const myObject = {
+  meals: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper'],
+};
+
+// console.log(myObject.meals[3]);
